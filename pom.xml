@@ -131,16 +131,6 @@
         </dependency>
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
-            <artifactId>auth</artifactId>
-            <version>${aws.java.sdk.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>software.amazon.awssdk</groupId>
-            <artifactId>regions</artifactId>
-            <version>${aws.java.sdk.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>http-client-spi</artifactId>
             <version>${aws.java.sdk.version}</version>
         </dependency>
@@ -569,13 +559,10 @@
         </profile>
     </profiles>
     <distributionManagement>
-        <snapshotRepository>
-            <id>aws</id>
-            <url>https://aws.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>aws</id>
-            <url>https://aws.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>github</id>
+            <name>GitHub Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/thebitgram/amazon-dynamodb-lock-client</url>
         </repository>
     </distributionManagement>
 </project>
